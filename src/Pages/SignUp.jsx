@@ -25,7 +25,7 @@ const SignUp = () => {
     const nav = useNavigate();
 
     const handleSendEmail = (e) => {
-        // e.preventDefault();
+
         const data = {email};
         const url =
             "https://ultimafinancesbackend.onrender.com/api/signupemailsand";
