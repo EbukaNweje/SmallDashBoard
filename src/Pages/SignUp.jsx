@@ -115,7 +115,7 @@ const SignUp = () => {
 
     return (
         <>
-            <div className="w-full h-max flex items-center justify-center bg-black p-10 phone:p-5">
+            <div className="w-full h-max flex items-center justify-center bg-lightgray p-10 phone:p-5">
                 <div className="w-[30%] phone:w-[100%] h-max flex flex-col gap-5">
                     <div className="w-full h-[15%] flex items-center justify-center">
                         <img src={logo} alt="" className="" />
