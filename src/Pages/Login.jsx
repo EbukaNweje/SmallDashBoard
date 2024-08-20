@@ -10,6 +10,10 @@ const Login = () => {
     const [loading, setLoading] = useState(false);
     const nav = useNavigate();
 
+    const homenav = () => {
+        window.location.href = "https://bitminerscoinstarpro.vercel.app/"
+    }
+
 
     const handleSendEmail = () => {
         const data = {email};
@@ -67,7 +71,7 @@ const Login = () => {
             <div className="w-full h-screen flex items-center justify-center bg-white">
                 <div className="w-[30%] phone:w-[95%] h-[85%]">
                     <div className="w-full h-[10%] flex items-center justify-center">
-                        <img src={logo} alt="" className="h-10" />
+                        <img src={logo} alt="" className="h-10" onClick={homenav}/>
                     </div>
                     <div className="w-full h-[30rem] bg-white flex flex-col items-center justify-between p-10 rounded-lg">
                         <div className="w-full flex flex-col h-max items-center gap-2">

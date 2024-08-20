@@ -23,6 +23,10 @@ const SignUp = () => {
     // const [xrpId, setXrpId] = useState("");
     const [loading, setLoading] = useState(false);
     const nav = useNavigate();
+    
+    const homenav = () => {
+        window.location.href = "https://bitminerscoinstarpro.vercel.app/"
+    }
 
     const handleSendEmail = (e) => {
 
@@ -112,7 +116,7 @@ const SignUp = () => {
             <div className="w-full h-max flex items-center justify-center bg-lightgray p-10 phone:p-5">
                 <div className="w-[30%] phone:w-[100%] h-max flex flex-col gap-5">
                     <div className="w-full h-[15%] flex items-center justify-center">
-                        <img src={logo} alt="" className="" />
+                        <img src={logo} alt="" className="" onClick={homenav}/>
                     </div>
                     <div className="w-full h-max bg-white flex flex-col gap-5 items-center justify-between p-10 phone:p-7 rounded-lg">
                         <div className="w-full flex flex-col h-max items-center gap-2">
