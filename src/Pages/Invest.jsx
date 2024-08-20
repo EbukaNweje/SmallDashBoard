@@ -8,7 +8,7 @@ const Invest = () => {
                   Make a Deposit
               </p>
               <p className="text-2xl font-bold text-[rgb(54,74,99)]">
-                Rockie Plan
+                Starter Plan
               </p>
               <div className="w-full h-max">
                   <div className="w-full h-9  flex gap-2 items-center pl-4 bg-[#ff950d] text-white border-b border-b-gray-200">
@@ -25,10 +25,10 @@ const Invest = () => {
                   </div>
                   <div className="w-full h-9 border-t-0  border-b border flex border-gray-200 pl-4">
                       <div className="w-[60%] h-full flex items-center  border-r border-r-gray-200">
-                          $1000.00 - $10000.00
+                            $1,000 - $10,000
                       </div>
                       <div className="w-[40%] pl-4 flex items-center h-full">
-                          4.50 %
+                            198%
                       </div>
                   </div>
 
@@ -38,7 +38,7 @@ const Invest = () => {
               </div>
               <div className="w-full h-max">
               <p className="text-2xl font-bold text-[rgb(54,74,99)]">
-                Standard Plan
+                Silver Plan
               </p>
                   <div className="w-full h-9  flex gap-2 items-center pl-4 bg-[#ff950d] text-white border-b border-b-gray-200">
                       <input type="radio" />
@@ -54,10 +54,10 @@ const Invest = () => {
                   </div>
                   <div className="w-full h-9 border-t-0  border-b border flex border-gray-200 pl-4">
                       <div className="w-[60%] h-full flex items-center  border-r border-r-gray-200">
-                          $10000.00 - $30000.00
+                         $15,000 - $100,000
                       </div>
                       <div className="w-[40%] pl-4 flex items-center h-full">
-                        6.5%
+                         225-264%
                       </div>
                   </div>
 
@@ -67,7 +67,7 @@ const Invest = () => {
               </div>
               <div className="w-full h-max">
               <p className="text-2xl font-bold text-[rgb(54,74,99)]">
-                Expert Plan
+                Gold Plan
               </p>
                   <div className="w-full h-9  flex gap-2 items-center pl-4 bg-[#ff950d] text-white border-b border-b-gray-200">
                       <input type="radio" />
@@ -83,10 +83,10 @@ const Invest = () => {
                   </div>
                   <div className="w-full h-9 border-t-0  border-b border flex border-gray-200 pl-4">
                       <div className="w-[60%] h-full flex items-center  border-r border-r-gray-200">
-                          $30000.00 - $50000.00
+                        $120,000 - $350,000
                       </div>
                       <div className="w-[40%] pl-4 flex items-center h-full">
-                          8%
+                        316-350%
                       </div>
                   </div>
 
@@ -112,10 +112,10 @@ const Invest = () => {
                   </div>
                   <div className="w-full h-9 border-t-0  border-b border flex border-gray-200 pl-4">
                       <div className="w-[60%] h-full flex items-center  border-r border-r-gray-200">
-                          $100000.00 - UNLIMITED
+                            $375,000 - $3,000,000
                       </div>
                       <div className="w-[40%] pl-4 flex items-center h-full">
-                          10.5%
+                            375-460%
                       </div>
                   </div>
 

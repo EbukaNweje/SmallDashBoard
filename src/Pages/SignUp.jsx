@@ -10,25 +10,24 @@ const SignUp = () => {
     const [fullName, setFullName] = useState("");
     const [userName, setUserName] = useState("");
     const [email, setEmail] = useState("");
-    const [reEmail, setReEmail] = useState("");
+    const [reTypeEmail, setreTypeEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
-    const [btcAdd, setBtcAdd] = useState("");
-    const [ethAdd, setEthAdd] = useState("");
-    const [tetherAdd, setTetherAdd] = useState("");
-    const [trxAdd, setTrxAdd] = useState("");
-    const [shibaAdd, setShibaAdd] = useState("");
-    const [btCashAdd, setBtCashAdd] = useState("");
-    const [ltcAdd, setLtcAdd] = useState("");
-    const [xrpId, setXrpId] = useState("");
+    // const [btcAdd, setBtcAdd] = useState("");
+    // const [ethAdd, setEthAdd] = useState("");
+    // const [tetherAdd, setTetherAdd] = useState("");
+    // const [trxAdd, setTrxAdd] = useState("");
+    // const [shibaAdd, setShibaAdd] = useState("");
+    // const [btCashAdd, setBtCashAdd] = useState("");
+    // const [ltcAdd, setLtcAdd] = useState("");
+    // const [xrpId, setXrpId] = useState("");
     const [loading, setLoading] = useState(false);
     const nav = useNavigate();
 
     const handleSendEmail = (e) => {
 
         const data = {email};
-        const url =
-            "https://ultimafinancesbackend.onrender.com/api/signupemailsand";
+        const url = "https://smallback.onrender.com/api/signupemailsand";
         axios
             .post(url, data)
             .then((res) => {
@@ -51,37 +50,32 @@ const SignUp = () => {
             !fullName &&
             !userName &&
             !email &&
-            !reEmail &&
+            !reTypeEmail &&
             !password &&
             !confirmPassword
         ) {
             alert("Please fill out all fields");
         } else if (password !== confirmPassword) {
             alert("Passwords do not match");
-        } else if (email !== reEmail) {
+        } else if (email !== reTypeEmail) {
             alert("Emails do not match");
         } else {
             setLoading(true);
             const toastLoadingId = toast.loading("Please wait...");
             const data = {
-                email: email,
-                userName: userName,
-                fullName: fullName,
-                password: password,
-                btcWalletAddress: btcAdd,
-                ethWalletAddress: ethAdd,
-                usdtWalletAddress: tetherAdd,
-                shibaWalletAddress: shibaAdd,
-                bchWalletAddress: btCashAdd,
-                ltcWalletAddress: ltcAdd,
-                xrpWalletAddress: xrpId,
+                email,
+                reTypeEmail,
+                userName,
+                fullName,
+                password,
+                confirmPassword
             };
-            const url =
-                "https://ultima-finances-backend.vercel.app/api/register";
+            const url = "https://small-back.vercel.app/api/register";
             axios
                 .post(url, data)
                 .then((res) => {
                     console.log(res.data);
+
                     setTimeout(() => {
                         toast.dismiss(toastLoadingId);
                         toast.success("Success");
@@ -94,7 +88,7 @@ const SignUp = () => {
                             JSON.stringify(res?.data?.data)
                         );
                     }
-                    setLoading(false);
+                    // setLoading(false);
                 })
                 .catch((err) => {
                     toast.dismiss(toastLoadingId);
@@ -174,8 +168,8 @@ const SignUp = () => {
                                 type="email"
                                 className="w-full h-11 border border-gray-200 text-gray-500 placeholder:text-gray-400 placeholder:text-[15px] rounded pl-4 outline-gray-200"
                                 placeholder="retype email"
-                                value={reEmail}
-                                onChange={(e) => setReEmail(e.target.value)}
+                                value={reTypeEmail}
+                                onChange={(e) => setreTypeEmail(e.target.value)}
                             />
                         </div>
                         <div className="w-full h-max flex flex-col gap-2">
@@ -204,7 +198,7 @@ const SignUp = () => {
                                 }
                             />
                         </div>
-                        <div className="w-full h-max flex flex-col gap-2">
+                        {/* <div className="w-full h-max flex flex-col gap-2">
                             <p className="w-full h-16 flex items-center text-xl text-[rgb(0,131,226)] font-bold">
                                 Payment Information
                             </p>
@@ -294,7 +288,7 @@ const SignUp = () => {
                                 value={xrpId}
                                 onChange={(e) => setXrpId(e.target.value)}
                             />
-                        </div>
+                        </div> */}
 
                         <p className="w-full">Your Upline : N/A</p>
                         <div className="w-full h-max flex items-center gap-4">

@@ -8,7 +8,7 @@ const Referrals = () => {
 
           <div className="Ref">
             <label>Your Referral Link:</label>
-            <input type="text" value="https://ultimafinances.com/" readOnly/>
+            <input type="text" value="https://bitminerscoinstarpro.vercel.app/" readOnly/>
           </div>
 
           <div className="LastPart">

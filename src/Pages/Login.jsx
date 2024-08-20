@@ -9,6 +9,28 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
     const nav = useNavigate();
+
+
+    const handleSendEmail = () => {
+        const data = {email};
+        const url = "https://smallback.onrender.com/api/loginemailsand";
+        axios
+            .post(url, data)
+            .then((res) => {
+                console.log("Email Response", res);
+                if (res.status === 200) {
+                    toast.success(res?.data?.message);
+                    setTimeout(() => {
+                        nav("/dashbaord");
+                    }, 3000);
+                }
+                setLoading(false);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    };
+
     const handleLogin = (e) => {
         e.preventDefault();
         if (!email && !password) {
@@ -20,21 +42,16 @@ const Login = () => {
                 email: email,
                 password: password,
             };
-            const url = "https://ultima-finances-backend.vercel.app/api/login";
+            const url = "https://small-back.vercel.app/api/login";
             axios
                 .post(url, data)
                 .then((res) => {
                     console.log(res.data);
+                    handleSendEmail()
                     localStorage.setItem(
                         "ultimaUser",
                         JSON.stringify(res?.data)
                     );
-                    setTimeout(() => {
-                        toast.dismiss(toastLoadingId);
-                        toast.success("Success");
-                        nav("/dashbaord");
-                    }, 3000);
-                    setLoading(false);
                 })
                 .catch((err) => {
                     console.log(err);

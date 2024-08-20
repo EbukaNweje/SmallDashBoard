@@ -222,7 +222,7 @@ const Deposit = () => {
                                     checked={usdt}
                                     onClick={handleSelectUsdt}
                                 />{" "}
-                                Spend funds from Tether - USDT
+                                Spend funds from Tether - USDT ETH
                             </p>
                             <p className="w-full flex items-center gap-2">
                                 <input
@@ -267,11 +267,11 @@ const Deposit = () => {
                                         className="w-max flex items-center gap-2 text-sm font-semibold"
                                         onClick={() =>
                                             handleCopyToClipboardBtc(
-                                                "16mxmisJvejeYh5kuzBVnUMbmM1A8DwyX1"
+                                                "bc1qp5xaf54n35qkudt4d0ajjqc4duexe0klksse99"
                                             )
                                         }
                                     >
-                                        16mxmisJvejeYh5kuzBVnUMbmM1A8DwyX1
+                                        bc1qp5xaf54n35qkudt4d0ajjqc4duexe0klksse99
                                         <span>
                                             <IoCopyOutline className="w-5 h-5" />
                                         </span>
@@ -309,11 +309,11 @@ const Deposit = () => {
                                         className="w-max flex items-center gap-2 text-sm font-semibold"
                                         onClick={() =>
                                             handleCopyToClipboardEth(
-                                                "0x899862a58abe7fa3ad1d10fa03aee3f09fef7f46"
+                                                "0xA21438f6bC71cf515D9D4572fBB843bf5624347B"
                                             )
                                         }
                                     >
-                                        0x899862a58abe7fa3ad1d10fa03aee3f09fef7f46
+                                        0xA21438f6bC71cf515D9D4572fBB843bf5624347B
                                         <span>
                                             <IoCopyOutline className="w-5 h-5" />
                                         </span>
@@ -339,7 +339,7 @@ const Deposit = () => {
                     <>
                         <div className="w-full h-max flex flex-col gap-3">
                             <p className="text-2xl text-[rgb(54,74,99)] font-bold w-full text-center justify-center">
-                                Please Confirm your Deposit (USDT)
+                                Please Confirm your Deposit (USDT ETH) 
                             </p>
                             <div className="w-full h-max flex flex-col gap-4 items-center">
                                 <p className=" text-[rgb(54,74,99)] font-bold w-full text-center justify-center">
@@ -351,11 +351,11 @@ const Deposit = () => {
                                         className="w-max flex items-center gap-2 text-sm font-semibold"
                                         onClick={() =>
                                             handleCopyToClipboardUsdt(
-                                                "0x899862a58abe7fa3ad1d10fa03aee3f09fef7f46"
+                                                "0xA21438f6bC71cf515D9D4572fBB843bf5624347B"
                                             )
                                         }
                                     >
-                                        0x899862a58abe7fa3ad1d10fa03aee3f09fef7f46
+                                        0xA21438f6bC71cf515D9D4572fBB843bf5624347B
                                         <span>
                                             <IoCopyOutline className="w-5 h-5" />
                                         </span>
@@ -393,11 +393,11 @@ const Deposit = () => {
                                         className="w-max flex items-center gap-2 text-sm font-semibold"
                                         onClick={() =>
                                             handleCopyToClipboardBch(
-                                                "1PdpQCQmSCqVmVYneY1Ks5764638roCWS3"
+                                                "qz2d9v93uq805avkdwxmngx2ssnn4prmxgtqz0sm07"
                                             )
                                         }
                                     >
-                                        1PdpQCQmSCqVmVYneY1Ks5764638roCWS3
+                                        qz2d9v93uq805avkdwxmngx2ssnn4prmxgtqz0sm07
                                         <span>
                                             <IoCopyOutline className="w-5 h-5" />
                                         </span>

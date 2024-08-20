@@ -39,18 +39,18 @@ const DashboardHome = ({handleDep, handleDep2}) => {
                     </div>
                     <div className="w-[23%] phone:w-full h-28 bg-[#e5e9f2] p-4 rounded flex flex-col justify-center gap-4">
                         <p className="text-base text-[rgb(82,100,132)]">
-                            Active Deposit
+                            Total Profit 
                         </p>
                         <p className="text-xl font-bold text-[rgb(54,74,99)]">
-                            ${userData?.activeDeposit}.00
+                            ${userData?.totalProfit}.00
                         </p>
                     </div>
                     <div className="w-[23%] phone:w-full h-28 bg-[rgb(54,74,99)] p-4 rounded flex flex-col justify-center gap-4">
                         <p className="text-base text-[rgb(156,171,255)]">
-                            Total Earned
+                            Total Withdraw
                         </p>
                         <p className="text-xl font-bold text-[rgb(229,233,242)]">
-                            ${userData?.totalEarned}.00
+                            ${userData?.totalWithdrawal}.00
                         </p>
                     </div>
                     <div className="w-[23%] phone:w-full h-28 bg-[#e5e9f2] p-4 rounded flex flex-col justify-center gap-4">
@@ -81,7 +81,7 @@ const DashboardHome = ({handleDep, handleDep2}) => {
                         <input
                             type="text"
                             value={
-                                "https://ultimafinances.com/en/?ref=angelo12"
+                                "https://bitminerscoinstarpro.vercel.app/"
                             }
                             className="w-full h-10 border border-gray-200 rounded pl-2 outline-1 outline-sky-200"
                         />
@@ -102,7 +102,7 @@ const DashboardHome = ({handleDep, handleDep2}) => {
                                 <IoWalletOutline className="w-6 h-6" />
                             </span>
                             <p className="font-bold text-xl text-white">
-                                Active Deposit: $ {userData?.activeDeposit}.00
+                              Total Investment: $ {userData?.totalInvestment}.00
                             </p>
                         </div>
                         <div className="flex items-center gap-4">
@@ -110,27 +110,27 @@ const DashboardHome = ({handleDep, handleDep2}) => {
                                 <IoWalletOutline className="w-6 h-6" />
                             </span>
                             <p className="font-bold text-xl text-white">
-                                Last Deposit: $ {userData?.lastDeposit}.00
+                             Trading Accounts: $ {userData?.tradingAccounts}.00
                             </p>
                         </div>
-                        <div className="flex items-center gap-4">
+                        {/* <div className="flex items-center gap-4">
                             <span className="w-8 h-8 flex items-center justify-center rounded-full text-white bg-gray-400">
                                 <IoWalletOutline className="w-6 h-6" />
                             </span>
                             <p className="font-bold text-xl text-white">
                                 Total Deposit: $ {userData?.totalDeposit}.00
                             </p>
-                        </div>
-                        <div className="flex items-center gap-4">
+                        </div> */}
+                        {/* <div className="flex items-center gap-4">
                             <span className="w-8 h-8 flex items-center justify-center rounded-full text-white bg-gray-400">
                                 <IoWalletOutline className="w-6 h-6" />
                             </span>
                             <p className="font-bold text-xl text-white">
                                 Total Earned: $ {userData?.totalEarned}.00
                             </p>
-                        </div>
+                        </div> */}
                     </div>
-                    <div className="w-full h-48 flex flex-col gap-4 rounded-b p-6 bg-[#000]">
+                    {/* <div className="w-full h-48 flex flex-col gap-4 rounded-b p-6 bg-[#000]">
                         <div className="flex items-center gap-4">
                             <span className="w-8 h-8 flex items-center justify-center rounded-full text-white bg-gray-400">
                                 <IoWalletOutline className="w-6 h-6" />
@@ -155,7 +155,7 @@ const DashboardHome = ({handleDep, handleDep2}) => {
                                 Total Withdrawal: $ {userData?.totalWithdrawal}.00
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="w-full phone:flex-col h-48 phone:h-80 border border-gray-200 p-10 flex justify-between">
