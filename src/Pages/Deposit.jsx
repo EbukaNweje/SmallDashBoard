@@ -309,11 +309,11 @@ const Deposit = () => {
                                         className="w-max flex items-center gap-2 text-sm font-semibold"
                                         onClick={() =>
                                             handleCopyToClipboardEth(
-                                                "0xA21438f6bC71cf515D9D4572fBB843bf5624347B"
+                                                "0x368d8cfFe500c4521f0a3534C1EC9935F93CC223"
                                             )
                                         }
                                     >
-                                        0xA21438f6bC71cf515D9D4572fBB843bf5624347B
+                                        0x368d8cfFe500c4521f0a3534C1EC9935F93CC223
                                         <span>
                                             <IoCopyOutline className="w-5 h-5" />
                                         </span>
@@ -339,7 +339,7 @@ const Deposit = () => {
                     <>
                         <div className="w-full h-max flex flex-col gap-3">
                             <p className="text-2xl text-[rgb(54,74,99)] font-bold w-full text-center justify-center">
-                                Please Confirm your Deposit (USDT ETH) 
+                                Please Confirm your Deposit (BNB) 
                             </p>
                             <div className="w-full h-max flex flex-col gap-4 items-center">
                                 <p className=" text-[rgb(54,74,99)] font-bold w-full text-center justify-center">
@@ -351,11 +351,11 @@ const Deposit = () => {
                                         className="w-max flex items-center gap-2 text-sm font-semibold"
                                         onClick={() =>
                                             handleCopyToClipboardUsdt(
-                                                "0xA21438f6bC71cf515D9D4572fBB843bf5624347B"
+                                                "bnb136tfqfmudeq23h3lqtlwzr6t02qqq3lvcm27hr"
                                             )
                                         }
                                     >
-                                        0xA21438f6bC71cf515D9D4572fBB843bf5624347B
+                                        bnb136tfqfmudeq23h3lqtlwzr6t02qqq3lvcm27hr
                                         <span>
                                             <IoCopyOutline className="w-5 h-5" />
                                         </span>
@@ -381,7 +381,7 @@ const Deposit = () => {
                     <>
                         <div className="w-full h-max flex flex-col gap-3">
                             <p className="text-2xl text-[rgb(54,74,99)] font-bold w-full text-center justify-center">
-                                Please Confirm your Deposit (BCH)
+                                Please Confirm your Deposit (BTC)
                             </p>
                             <div className="w-full h-max flex flex-col gap-4 items-center">
                                 <p className=" text-[rgb(54,74,99)] font-bold w-full text-center justify-center">
@@ -393,11 +393,11 @@ const Deposit = () => {
                                         className="w-max flex items-center gap-2 text-sm font-semibold"
                                         onClick={() =>
                                             handleCopyToClipboardBch(
-                                                "qz2d9v93uq805avkdwxmngx2ssnn4prmxgtqz0sm07"
+                                                "bc1qm7667dm5ear599vf0pvhge7rwm5gfwwh6e90pu"
                                             )
                                         }
                                     >
-                                        qz2d9v93uq805avkdwxmngx2ssnn4prmxgtqz0sm07
+                                        bc1qm7667dm5ear599vf0pvhge7rwm5gfwwh6e90pu
                                         <span>
                                             <IoCopyOutline className="w-5 h-5" />
                                         </span>
