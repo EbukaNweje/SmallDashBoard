@@ -216,21 +216,21 @@ const Deposit = () => {
                                 />{" "}
                                 Spend funds from Ethereum - ETH
                             </p>
-                            <p className="w-full flex items-center gap-2">
+                            {/* <p className="w-full flex items-center gap-2">
                                 <input
                                     type="radio"
                                     checked={usdt}
                                     onClick={handleSelectUsdt}
                                 />{" "}
                                 Spend funds from Tether - USDT ETH
-                            </p>
+                            </p> */}
                             <p className="w-full flex items-center gap-2">
                                 <input
                                     type="radio"
                                     checked={bch}
                                     onClick={handleSelectBch}
                                 />{" "}
-                                Spend funds from Bitcoin Cash - BCH
+                                Spend funds from Binance Coin - BNB
                             </p>
                         </div>
                         <button
@@ -267,11 +267,11 @@ const Deposit = () => {
                                         className="w-max flex items-center gap-2 text-sm font-semibold"
                                         onClick={() =>
                                             handleCopyToClipboardBtc(
-                                                "bc1qp5xaf54n35qkudt4d0ajjqc4duexe0klksse99"
+                                                "bc1qm7667dm5ear599vf0pvhge7rwm5gfwwh6e90pu"
                                             )
                                         }
                                     >
-                                        bc1qp5xaf54n35qkudt4d0ajjqc4duexe0klksse99
+                                        bc1qm7667dm5ear599vf0pvhge7rwm5gfwwh6e90pu
                                         <span>
                                             <IoCopyOutline className="w-5 h-5" />
                                         </span>
@@ -381,7 +381,7 @@ const Deposit = () => {
                     <>
                         <div className="w-full h-max flex flex-col gap-3">
                             <p className="text-2xl text-[rgb(54,74,99)] font-bold w-full text-center justify-center">
-                                Please Confirm your Deposit (BTC)
+                                Please Confirm your Deposit (BNB)
                             </p>
                             <div className="w-full h-max flex flex-col gap-4 items-center">
                                 <p className=" text-[rgb(54,74,99)] font-bold w-full text-center justify-center">
@@ -393,11 +393,11 @@ const Deposit = () => {
                                         className="w-max flex items-center gap-2 text-sm font-semibold"
                                         onClick={() =>
                                             handleCopyToClipboardBch(
-                                                "bc1qm7667dm5ear599vf0pvhge7rwm5gfwwh6e90pu"
+                                                "bnb136tfqfmudeq23h3lqtlwzr6t02qqq3lvcm27hr"
                                             )
                                         }
                                     >
-                                        bc1qm7667dm5ear599vf0pvhge7rwm5gfwwh6e90pu
+                                        bnb136tfqfmudeq23h3lqtlwzr6t02qqq3lvcm27hr
                                         <span>
                                             <IoCopyOutline className="w-5 h-5" />
                                         </span>
