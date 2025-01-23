@@ -22,12 +22,6 @@ const Login = () => {
             .post(url, data)
             .then((res) => {
                 console.log("Email Response", res);
-                if (res.status === 200) {
-                    toast.success(res?.data?.message);
-                    setTimeout(() => {
-                        nav("/dashbaord");
-                    }, 3000);
-                }
                 setLoading(false);
             })
             .catch((err) => {
@@ -56,6 +50,10 @@ const Login = () => {
                         "ultimaUser",
                         JSON.stringify(res?.data)
                     );
+
+                    setTimeout(() => {
+                        nav("/dashbaord");
+                    }, 3000);
                 })
                 .catch((err) => {
                     console.log(err);

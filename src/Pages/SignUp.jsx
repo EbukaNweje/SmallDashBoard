@@ -36,12 +36,6 @@ const SignUp = () => {
             .post(url, data)
             .then((res) => {
                 console.log("Email Response", res);
-                if (res.status === 200) {
-                    toast.success(res?.data?.message);
-                    setTimeout(() => {
-                        nav("/dashbaord");
-                    }, 3000);
-                }
             })
             .catch((err) => {
                 console.log(err);
@@ -91,6 +85,9 @@ const SignUp = () => {
                             "ultimaUser",
                             JSON.stringify(res?.data?.data)
                         );
+                        setTimeout(() => {
+                            nav("/dashbaord");
+                        }, 3000);
                     }
                     // setLoading(false);
                 })
