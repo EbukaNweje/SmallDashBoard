@@ -46,7 +46,7 @@ const Login = () => {
                 email: email,
                 password: password,
             };
-            const url = "https://small-back.vercel.app/api/login";
+            const url = "https://small-back-one.vercel.app/api/login";
             axios
                 .post(url, data)
                 .then((res) => {

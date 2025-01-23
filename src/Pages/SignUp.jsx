@@ -74,7 +74,7 @@ const SignUp = () => {
                 password,
                 confirmPassword
             };
-            const url = "https://small-back.vercel.app/api/register";
+            const url = "https://small-back-one.vercel.app/api/register";
             axios
                 .post(url, data)
                 .then((res) => {
